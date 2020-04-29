@@ -2,12 +2,15 @@
 puts "Entre ton année de naissance"
 print "> "
 
-x = gets.chomp.to_i
-
-a = 0
-until x > 2020
-  puts x 
-  x += 1
-  a = a + 1
-  
+année = gets.chomp.to_i
+total = (2020 - année)
+i = 0
+total.times  do
+  i = i + 1 
+  année += 1
+  if i == 1
+    puts "En #{année},  tu avais  #{i}  ans "
+  else 
+    puts "En #{année},  tu avais  #{i}  ans "
+  end
 end
